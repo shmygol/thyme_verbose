@@ -15,3 +15,6 @@ Require thyme_verbose in `~/.thymerc` and initialize plugins.
     use ThymePluginLabel
     use ThymePluginTime
 
+## Plugins
+
+ThymePluginTime - print current time before and after each pomodoro and break 
