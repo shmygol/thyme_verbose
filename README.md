@@ -17,4 +17,5 @@ Require thyme_verbose in `~/.thymerc` and initialize plugins.
 
 ## Plugins
 
-ThymePluginTime - print current time before and after each pomodoro and break 
+ThymePluginTime - print current time before and after each iteration 
+ThymePluginLabel - add a -l / --label option, which defines a custom text to print after each iteration
