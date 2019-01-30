@@ -18,6 +18,6 @@ Require thyme_verbose in `~/.thymerc` and initialize plugins.
 
 ## Plugins
 
-ThymePluginTime - print current time before and after each iteration 
-ThymePluginLabel - add a -l / --label option, which defines a custom text to print after each iteration
-ThymePluginBell - make an terminal alarm (beep code) after each iteration 
+* ThymePluginTime - print current time before and after each iteration 
+* ThymePluginLabel - add a -l / --label option, which defines a custom text to print after each iteration
+* ThymePluginBell - make an terminal alarm (beep code) after each iteration 
