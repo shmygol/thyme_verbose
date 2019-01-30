@@ -1,17 +1,17 @@
 
-class ThymePluginBeep
+class ThymePluginBell
   def initialize(thyme, options={})
   end
 
   # Hooks
 
   def after(seconds_left)
-    beep
+    bell
   end
 
   private
 
-  def beep
+  def bell
     puts "\a"
   end
 end
