@@ -44,7 +44,7 @@ class ThymePluginMusic
       " /org/mpris/MediaPlayer2"\
       " org.mpris.MediaPlayer2.Player.%{action}"
     else
-      # exception
+      raise SystemCallError, "Neither osascript nor dbus-send was found"
     end
   end
 
