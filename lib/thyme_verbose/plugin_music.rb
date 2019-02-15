@@ -61,12 +61,5 @@ class ThymePluginMusic
     end
     return nil
   end
-
-  def show_label
-    if !@label.empty?
-      caption = 'LABEL: ' + @label
-      puts caption + ' ' * (50 - caption.length)
-    end
-  end
 end
 
