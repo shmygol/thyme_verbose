@@ -1,9 +1,9 @@
 
 class ThymePluginLabel
   def initialize(thyme, options={})
-    label = @label = ''
+    plugin_options = @plugin_options = {:label => ''}
     thyme.option :l, 'label str', 'Label' do |str|
-      label.replace str
+      plugin_options[:label] = str
       @run = true
     end
   end
@@ -21,8 +21,8 @@ class ThymePluginLabel
   private
 
   def show_label
-    if !@label.empty?
-      caption = 'LABEL: ' + @label
+    if !@plugin_options[:label].empty?
+      caption = 'LABEL: ' + @plugin_options[:label]
       puts caption + ' ' * (50 - caption.length)
     end
   end
