@@ -1,24 +1,25 @@
 
 class ThymePluginMusic
   def initialize(thyme, options={})
+    @thyme = thyme
     @player = options[:player] || 'spotify'
     @command_play = options[:command_play] || command_play
     @command_pause = options[:command_pause] || command_pause
     mute_music = @mute_music = false
-    thyme.option :m, nil, 'disalbe music plugin for this Pomodoro' do
-        mute_music.replace true
-        @run = true
+    @thyme.option :m, nil, 'disalbe music plugin for this Pomodoro' do
+      mute_music.replace true
+      @run = true
     end
   end
 
   # Hooks
 
   def before
-    `#{@command_play}` unless @break || @mute_music
+    `#{@command_play}` unless @thyme.break || @mute_music
   end
 
   def after(seconds_left)
-    `#{@command_pause}` unless @break || @mute_music
+    `#{@command_pause}` unless @thyme.break || @mute_music
   end
 
   private
