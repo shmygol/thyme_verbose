@@ -16,6 +16,7 @@ Require thyme_verbose in `~/.thymerc` and initialize plugins.
     use ThymePluginLabel
     use ThymePluginBell
     use ThymePluginMusic
+    use ThymePluginNotify
 
 ## Plugins
 
@@ -23,3 +24,4 @@ Require thyme_verbose in `~/.thymerc` and initialize plugins.
 * ThymePluginLabel - add a -l / --label option, which defines a custom text to print after each iteration
 * ThymePluginBell - make an terminal alarm (beep code) after each iteration 
 * ThymePluginMusic - play music during a pomodoro
+* ThymePluginNotify - show OS notification after each iteration
